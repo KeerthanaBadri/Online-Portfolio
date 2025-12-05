@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keerthana Badri | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body { margin:0; padding:0; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:#f2f2f2; color:#222; }
+    .container { max-width:960px; margin:auto; padding:20px; }
+    header.navbar { background-color:#fff; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
+    header .profile-pic { width:40px; height:40px; border-radius:50%; }
+    nav ul { list-style:none; display:flex; gap:15px; padding:0; margin:0; }
+    nav ul li a { color:#333; text-decoration:none; }
+    section { padding:40px 0; }
+    .hero { text-align:center; padding-top:60px; }
+    .hero h2 span { color:#007acc; }
+    .btn { display:inline-block; padding:10px 20px; background-color:#007acc; color:white; text-decoration:none; border-radius:5px; margin-top:20px; }
+    .project-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .project-card { background-color:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.05); }
+    .project-card a { color:#007acc; text-decoration:none; }
+    .resume a { text-decoration:underline; color:#007acc; font-weight:bold; }
+    .certification-list, .contact-form input, .contact-form textarea { width:100%; }
+    .footer { text-align:center; padding:20px; background-color:#e6e6e6; color:#444; }
+    .social-links a { margin:0 10px; color:#007acc; text-decoration:none; }
+    .connect-list { list-style:none; padding:0; }
+    .connect-list li { margin-bottom:10px; font-size:16px; }
+    .connect-list a { color:#007acc; text-decoration:none; }
+    .connect-list a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <img src="keerthana.jpg" alt="Profile Picture" class="profile-pic" />
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Hello, I'm <span>Keerthana Badri</span></h2>
+      <p>Computer Science & Engineering student with a passion for building web applications.</p>
+      <a href="#work-experience" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>CSE student skilled in web development, ML fundamentals, data structures, and database management. Built end-to-end projects including a MERN Student Management System, portfolio website, and an Infosys ML earthquake predictor. Proficient in Python, React, and SQL, with strong problem-solving and clean-code focus.</p>
+      <p>I specialize in full-stack web development using the MERN stack with a strong foundation in Python, Java, and web technologies. I've built projects like an Expense Tracker App, Student Management System (MERN), and a mood-based digital diary app — combining logic, user experience, and aesthetics.</p>
+      <p>Beyond code, I enjoy solving Data Structures and Algorithms challenges, exploring new frameworks, and collaborating with peers on impactful projects.</p>
+
+      <h3>💻 Tech Skills</h3>
+      <ul>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js</li>
+        <li><strong>Backend:</strong> Node.js, Express.js</li>
+        <li><strong>Database:</strong> MySQL, MongoDB</li>
+        <li><strong>Languages:</strong> Python, Data Structures, Java</li>
+        <li><strong>Soft Skills:</strong> Leadership, Problem-Solving, Teamwork, Time Management, Decision-Making, Communication</li>
+        <li><strong>Machine Learning (Basic):</strong> Data cleaning & preprocessing, EDA, basic ML models (LR, DT, RF), and model evaluation</li>
+      </ul>
+
+      <h3 id="work-experience">💼 Work Experience</h3>
+      <div class="work-experience">
+        <h4>Machine Learning Intern – Infosys Springboard (Online, Oct 2025 – Nov 2025)</h4>
+        <p>Developed the ImpactSense Earthquake-Impact Prediction system using the Kaggle dataset, including data preprocessing, feature engineering, and training ML models (LR, DT, RF, GB). Evaluated performance using standard metrics and generated explainability outputs such as feature importance and SHAP.</p>
+        <p><strong>GitHub / Demo:</strong> <a href="https://github.com/springboardmentor3847a-cloud/ImpactSense-Earthquake-Impact-Prediction/tree/Keerthana-branch" target="_blank">View Project</a></p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="images/student-management.png" alt="Student Management System" style="width:100%; border-radius:10px; margin-bottom:10px;">
+      <h3>Student Management System (MERN)</h3>
+      <p>Developed a CRUD application using MERN stack for managing student records in real time.</p>
+      <a href="https://student-nu-topaz.vercel.app/" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/moodswing-diary.png" alt="MoodSwing Diary App" style="width:100%; border-radius:10px; margin-bottom:10px;">
+      <h3>MoodSwing Diary App</h3>
+      <p>A mood-based digital diary built using the MERN stack. Users can select a mood, write diary entries, and view them by date with a matching background.</p>
+      <a href="https://mood-diary-r1jw.vercel.app/" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/educational-platform.png" alt="Educational Platform" style="width:100%; border-radius:10px; margin-bottom:10px;">
+      <h3>Educational Platform</h3>
+      <p>Designed and deployed a responsive educational portfolio using HTML, CSS, and JavaScript.</p>
+      <a href="https://keerthanabadri.github.io/EduPlatform/" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+    <section id="resume" class="resume">
+      <h2>Resume</h2>
+      <p>You can view or download my resume below:</p>
+      <a href="Keerthana_Badri.pdf" target="_blank">View Resume (PDF)</a>
+    </section>
+
+    <section id="certifications" class="certifications">
+      <h2>Certifications</h2>
+      <ul class="certification-list">
+        <li><strong>Java Programming</strong> – Swayam NPTEL (2023)</li>
+        <li><strong>Python (5-Star)</strong> – HackerRank (2023)</li>
+        <li><strong>Web Development</strong> – Coursera (2024)</li>
+      </ul>
+    </section>
+
+    <!-- Fixed Connect Section -->
+    <section id="connect" class="connect">
+      <h2>Connect with Me</h2>
+      <p>You can reach me through the following platforms:</p>
+      <ul class="connect-list">
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/keerthana-badri-6548342b4" target="_blank">keerthana-badri-6548342b4</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/KeerthanaBadri" target="_blank">KeerthanaBadri</a></li>
+        <li><strong>Email:</strong> <a href="mailto:keerthanabadri1727@gmail.com">keerthanabadri1727@gmail.com</a></li>
+        <li><strong>Phone:</strong> +91-9381919141</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Keerthana Badri. All rights reserved.</p>
+  </footer>
+</body>
+</html>
